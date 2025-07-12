@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+    <div class="todo-container">
+        <h2>To-Do List 📝</h2>
+
+        <div class="input-group">
+            <input type="text" id="taskInput" placeholder="Adicione uma nova tarefa" />
+            <button class="btn-add" onclick="addTask()">Add</button>
+        </div>
+
+        <ul id="taskList">
+            <th:block th:each="tarefa : ${tarefas}">
+                <li th:classappend="${tarefa.concluida} ? 'completed'">
+                    <!-- Concluir -->
+                    <form th:action="@{'/tarefas/concluir/' + ${tarefa.id}}" method="post" style="display:inline;">
+                        <button type="submit" class="btn-complete" th:text="${tarefa.concluida ? '✔️' : ''}"></button>
+                    </form>
+
+                    <!-- Descrição -->
+                    <span th:text="${tarefa.descricao}"></span>
+
+                    <!-- Excluir -->
+                    <form th:action="@{'/tarefas/excluir/' + ${tarefa.id}}" method="post" style="display:inline;">
+                        <button type="submit" class="btn-delete">❌</button>
+                    </form>
+                </li>
+            </th:block>
+        </ul>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
