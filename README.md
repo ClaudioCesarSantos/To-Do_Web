@@ -23,8 +23,8 @@ O sistema permite ao usuário gerenciar tarefas diretamente pelo navegador, pode
 
 ## ✨ Funcionalidades do sistema
 O sistema é composto pelas seguintes funcionalidades:
-✔️ Adicionar tarefa (descrição)
-✔️ Listar tarefas salvas no banco
-✔️ Marcar tarefa como concluída
-✔️ Remover tarefa
-✔️ Integração com banco de dados MySQL para persistência de dados
+- ✔️ Adicionar tarefa (descrição)
+- ✔️ Listar tarefas salvas no banco
+- ✔️ Marcar tarefa como concluída
+- ✔️ Remover tarefa
+- ✔️ Integração com banco de dados MySQL para persistência de dados
