@@ -1,8 +1,10 @@
-Projeto To-Do Web 📝
-📌 Status do projeto
+# Projeto To-Do Web 📝
+
+## 📌 Status do projeto
+
 ✅ Concluído
 
-🖥️ Tecnologias aplicadas
+## 🖥️ Tecnologias aplicadas
 
 Java
 Spring Boot
@@ -13,13 +15,13 @@ Thymeleaf
 MySQL
 Git & GitHub
 
-👥 Time de desenvolvedores
+## 👥 Time de desenvolvedores
 Nome do desenvolvedor: Cláudio César da Paz dos Santos
 
-🎯 Objetivo do software
+## 🎯 Objetivo do software
 O sistema permite ao usuário gerenciar tarefas diretamente pelo navegador, podendo adicioná-las, visualizá-las, marcá-las como concluídas ou removê-las. Todas as informações são armazenadas no banco de dados MySQL.
 
-✨ Funcionalidades do sistema
+## ✨ Funcionalidades do sistema
 O sistema é composto pelas seguintes funcionalidades:
 ✔️ Adicionar tarefa (descrição)
 ✔️ Listar tarefas salvas no banco
